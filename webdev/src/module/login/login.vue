@@ -2,7 +2,7 @@
     <div class="login-background">
         <div class="login-box">
             <el-form label-position="right" :model="formLogin" :rules="loginRules" ref="loginForm">
-                <h1 class="login-title">食堂食品网上采购平台</h1>
+                <h1 class="login-title">管理平台</h1>
                 <el-form-item  prop="username">
                     <el-input maxlength="11" v-model.trim="formLogin.username" placeholder="请输入用户名"></el-input>
                 </el-form-item>
