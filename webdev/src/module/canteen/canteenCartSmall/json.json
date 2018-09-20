@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "code": "0",
+    "message": "成功"
+  },
+  "data": {
+    "addressName": "地址",
+    "canteenName": "地址2",
+    "receiverContact": "收货人",
+    "receiverContactPhone": "13111111111",
+    "receiverId":"登录的用户id",
+    "receiverName":"登录的用户名",
+    "subCartVoList": [
+      {
+        "cartId": "订单id",
+        "id": "id",
+        "createTime": "提交时间",
+        "updateTime": "修改时间",
+        "supplierContact":"供货商联系人",
+        "supplierContactPhone":"15111111111",
+        "supplierName":"供货商",
+        "subCartGoodsVoList": [
+          {
+            "id": "id",
+            "cartId": "cartId",
+            "goodsId": "goodsId",
+            "goodsMainPic": "tu",
+            "goodsName": "石钰的商品1",
+            "goodsNetContent": 500,
+            "goodsNetContentUnit": "g",
+            "goodsPrice": "2",
+            "goodsTypeName": "蔬菜类",
+            "goodsNum": 2,
+            "isSelect": 0,
+            "subCartId": "subCartId",
+            "supplierId": "supplierId",
+            "updateTime": "updateTime"
+          },{
+            "id": "id",
+            "cartId": "cartId",
+            "goodsId": "goodsId",
+            "goodsMainPic": "tu",
+            "goodsName": "石钰的商品2",
+            "goodsNetContent": 500,
+            "goodsNetContentUnit": "g",
+            "goodsPrice": "1",
+            "goodsTypeName": "蔬菜类",
+            "goodsNum": 2,
+            "isSelect": 1,
+            "subCartId": "subCartId",
+            "supplierId": "supplierId",
+            "updateTime": "updateTime"
+          }
+        ]
+      },
+      {
+        "cartId": "订单id",
+        "id": "id",
+        "createTime": "提交时间",
+        "updateTime": "修改时间",
+        "supplierContact":"供货商联系人",
+        "supplierContactPhone":"15111111111",
+        "supplierName":"供货商",
+        "subCartGoodsVoList": [
+          {
+            "id": "id",
+            "cartId": "cartId",
+            "goodsId": "goodsId",
+            "goodsMainPic": "tu",
+            "goodsName": "石钰的商品3",
+            "goodsNetContent": 500,
+            "goodsNetContentUnit": "g",
+            "goodsPrice": "12",
+            "goodsTypeName": "蔬菜类",
+            "goodsNum": 2,
+            "isSelect": 1,
+            "subCartId": "subCartId",
+            "supplierId": "supplierId",
+            "updateTime": "updateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

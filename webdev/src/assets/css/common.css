@@ -1,0 +1,403 @@
+/*��ť������ʽ*/
+/**通用单一意义样式 如:height width line-height font color margin padding .. 命名规则为 height10 padding20 ..**//**width**/
+.width50{width:50px;}
+.width60{width:60px;}
+/**height**/
+.height15{height:15px;}
+.height30{height:30px;}
+.height50{height:50px;}
+.height60{height:60px;}
+.h100{height: 100%;}
+/**margin**/
+.margin-top10{margin-top: 10px;}
+.margin-bottom10{margin-bottom: 10px;}
+.margin10{margin:10px;}
+.margin20{margin:20px;}
+.margin-left20{margin-left:20px;}
+/**padding**/
+.padding10{padding:10px;}
+.padding-bottom10{  padding-bottom: 10px;  }
+.padding-bottom15{  padding-bottom: 15px;  }
+.padding-left10{padding-left: 10px;}
+.padding-left15{padding-left: 15px;}
+.padding-right15{padding-right:15px;}
+.padding-right20{padding-right:20px;}
+
+.com-submit{
+  padding: 8px 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  z-index: 200;
+
+  background-color: rgba(255,255,255,0.90);
+  box-shadow: 0 0 2px 0 rgba(119,119,119,0.50);
+}
+.com-submit-a{
+  padding: 8px 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  z-index: 200;
+
+  background-color: rgba(255,255,255,0.90);
+  box-shadow: 0 0 2px 0 rgba(119,119,119,0.50);
+}
+.com-submit .btn,.com-submit-a .btn{
+  display: inline-block;
+  background: #3395FF;
+  border-radius: 4px;
+  font-size: 17px;
+  color: #FFFFFF;
+  height: 39px;
+  width: 345px;
+  text-align: center;
+  line-height: 39px;
+
+}
+/*checkbox�Ƿ񹫿�������ʽ*/
+.com-address .infomation{
+  height: 44px;
+  width: 92%;
+  margin-left: 15px;
+}
+.ls-option {
+  margin-top: 10px;
+  background-color: #fff;
+}
+.ls-option .ls-line {
+  position: relative;
+  margin-left: 15px;
+  height: 44px;
+}
+.ls-option .ls-line p {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  left: 0;
+  font-size: 15px;
+  color: #000000;
+}
+.mint-switch {
+  position: absolute;
+  top: 50%;
+
+  right: 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #44DB5E;
+  margin-top: -16px;
+}
+.mint-switch-input {
+  display: none;
+}
+.mint-switch-core {
+  display: inline-block;
+  position: relative;
+  width: 52px;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background: #d9d9d9;
+  text-align: right;
+}
+.mint-switch-label:empty {
+  margin-left: 0;
+}
+.mint-switch-label {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/*switch*/
+.mint-switch {
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  -webkit-box-align: center;
+
+  -ms-flex-align: center;
+
+  align-items: center;
+
+  position: relative
+}
+
+.mint-switch-label {
+
+  margin-left: 10px;
+
+  display: inline-block
+}
+
+.mint-switch-label:empty {
+
+  margin-left: 0
+}
+
+.mint-switch-core::after, .mint-switch-core::before {
+
+  content: " ";
+
+  top: 0;
+
+  left: 0;
+
+  position: absolute;
+
+  -webkit-transition: -webkit-transform .3s;
+
+  transition: -webkit-transform .3s;
+
+  transition: transform .3s;
+
+  transition: transform .3s, -webkit-transform .3s;
+
+  border-radius: 15px
+}
+
+.mint-switch-core::after {
+
+  width: 30px;
+
+  height: 30px;
+
+  background-color: #fff;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .4)
+}
+
+.mint-switch-core::before {
+
+  width: 50px;
+
+  height: 30px;
+
+  background-color: #fdfdfd
+}
+
+.mint-switch-input {
+
+  display: none
+}
+
+.mint-switch-input:checked + .mint-switch-core {
+
+  border-color: #44DB5E;
+
+  background-color: #44DB5E
+}
+
+.mint-switch-input:checked + .mint-switch-core::before {
+
+  -webkit-transform: scale(0);
+
+  transform: scale(0)
+}
+
+.mint-switch-input:checked + .mint-switch-core::after {
+
+  -webkit-transform: translateX(20px);
+
+  transform: translateX(20px)
+}
+.mint-switch{
+  position: absolute;
+  top: 50%;
+  right:16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #44DB5E;
+  margin-top:-16px;
+}
+
+/* 公共弹框样式 */
+.msgbox-content {
+    padding: 22px 0;
+    min-height: 17px;
+    position: relative;
+}
+div.msgbox-message {
+    font-size: 16px;
+    text-align: center;
+    color: #030303;
+}
+
+.msgbox-message {
+    line-height: 17px;
+}
+div.msgbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    background-color: #ffffff;
+    width: 270px;
+    border-radius: 5px;
+    font-size: 16px;
+    -webkit-user-select: none;
+     overflow: hidden;
+     opacity: 1;
+     backface-visibility: hidden;
+}
+div.msgbox-btns {
+    display: box; /* OLD - Android 4.4- */
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    font-size: 17px;
+    text-align: center;
+    color: #030303;
+    border-radius: 5px;
+}
+div button.msgbox-cancel {
+    color: #007AFF !important;
+    font-size: 17px;
+  /*display: none;*/
+}
+div.msgbox-btns {
+    height: 44px;
+    line-height: 44px;
+}
+div button.msgbox-confirm{
+    font-size: 17px !important;
+    color: #007AFF!important;
+}
+div.msgbox-btn {
+    display: block;
+    background-color: #fff;
+    border: 0;
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0;
+    border-radius: 0;
+    font-size:17px;
+  width: 50%;
+}
+div.msgbox-content:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 200%;
+    border-top: 1px solid #DDDEE3;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+   -webkit-transform: scale(.5,.5);
+   transform: scale(.5,.5);
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+button.msgbox-cancel:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 200%;
+    bottom: 0;
+    border-right: 1px solid #DDDEE3;
+    -webkit-transform-origin: 0 0;
+     transform-origin: 0 0;
+     -webkit-transform: scale(.5,.5);
+     transform: scale(.5,.5);
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+/*空白页面*/
+.page_mark{height: 100%;width: 100%;position: fixed;left: 0;top: 0;background: #fff;z-index: 1000;opacity: 1;}
+.page_contain{
+  min-height: 105px;
+  width: 270px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  top: 25%;
+  left:50%;
+  z-index: 1001;
+  text-align: center;
+  margin-top: -52.5px;
+  margin-left: -135px;
+  display: inline-block;
+}
+.page_contain img{
+  height: 70px;
+  width:70px;
+  margin-bottom:40px
+}
+.page_contain .page_title{font-size: 16px;
+  color: #4A4A4A;
+  letter-spacing: 0;
+  line-height: 22px;}
+/* 滚轮按钮 */
+.mbsc-ios .dwb-s .dwb{
+  font-weight: 400!important;
+}
+.mbsc-ios .dwbc{
+  background-color: #F2F2F4!important;
+  border-bottom: none!important;
+}
+.mbsc-ios .dwwc{
+ padding-left: 0!important;
+  padding-right: 0!important;
+}
+.mint-toast.is-placemiddle{
+  top:250px !important;
+  width: 275px !important;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+.mint-toast{
+  padding-top: 12px !important;
+  padding-bottom: 13px !important;
+  background: rgba(0,0,0,.5) !important;
+}
+
+/************************** yhx-重置样式 ***********************/
+.search-pack {
+    position: relative;
+    overflow: hidden;
+}
+.search-pack .el-input-pack{
+    float: left;
+    width: 100%;
+    padding-right: 130px;
+    position: relative;
+}
+.search-pack .el-input-pack input{
+    display: block;
+    border: 1px solid #CAD9E5;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+
+.search-pack .search-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+    background: #409EFF;
+    border-radius: 2px;
+    /*margin-left: 30px;*/
+}
