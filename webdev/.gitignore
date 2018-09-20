@@ -1,6 +1,7 @@
 #Maven Project File
 target/
 bin/
+dist/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
